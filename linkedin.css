@@ -6,7 +6,7 @@
     "left-side main right-side" 20fr /
     200px 1fr 200px;
 }
-
+/* border readius implemented to round the edges of menu areas */
 .navBar {
   grid-area: navBar;
   background: #72b3546e;
@@ -42,7 +42,6 @@
       "left-side" 100px
       "main" 20fr/
       100%;
-    /* width: 100%;    */
   }
   .right-side {
     display: none;
