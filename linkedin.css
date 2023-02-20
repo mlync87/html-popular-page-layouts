@@ -1,0 +1,50 @@
+.container {
+  height: 1000px;
+  display: grid;
+  grid-template:
+    "navBar navBar navBar" 1fr
+    "left-side main right-side" 20fr /
+    200px 1fr 200px;
+}
+
+.navBar {
+  grid-area: navBar;
+  background: #72b3546e;
+}
+.leftMenu {
+  margin: 10px;
+  grid-area: left-side;
+  background: rgb(154, 38, 137);
+  border-radius: 10px;
+}
+.main {
+  margin: 10px;
+  grid-area: main;
+  background: rgb(13, 221, 207);
+  border-radius: 10px;
+}
+.rightMenu {
+  margin: 10px;
+  grid-area: right-side;
+  background: rgb(86, 161, 0);
+  border-radius: 10px;
+}
+* {
+  margin: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: 1000px;
+    display: grid;
+    grid-template:
+      "navBar" 1fr
+      "left-side" 100px
+      "main" 20fr/
+      100%;
+    /* width: 100%;    */
+  }
+  .right-side {
+    display: none;
+  }
+}
