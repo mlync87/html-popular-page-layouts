@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template:
+    "sideBar headBar headBar" 80px
+    "sideBar serverBar main" 1fr
+    "sideBar serverBar input" 60px /
+    100px 200px 1fr;
+  gap: 5px;
+}
+
+.headBar {
+  grid-area: headBar;
+  background-color: green;
+}
+
+.sideBar {
+  background-color: blue;
+  grid-area: sideBar;
+}
+
+.serverBar {
+  grid-area: serverBar;
+  background-color: maroon;
+}
+
+.main {
+  grid-area: main;
+  background-color: indigo;
+}
+
+.input {
+  grid-area: input;
+  background-color: orange;
+}
