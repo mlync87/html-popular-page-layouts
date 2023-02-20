@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template:
+    "header header header header" 20px
+    "Left Main Settings rightNav" 100% /
+    200px 1fr 200px 60px;
+  height: 1000px;
+}
+.header {
+  grid-area: header;
+  background: blue;
+}
+.Left {
+  grid-area: Left;
+  background: red;
+}
+.Main {
+  grid-area: Main;
+  background: orange;
+}
+.Settings {
+  grid-area: Settings;
+  background: pink;
+}
+.rightNav {
+  grid-area: rightNav;
+  background: green;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template:
+      "navBar navBar navBar" 20px
+      "Left Main Settings"/
+      200px 1fr 200px;
+    height: 1000px;
+  }
+  .rightNav {
+    display: none;
+  }
+}
